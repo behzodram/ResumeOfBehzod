@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Behzod - Portfolio & Resume</title>
+    <style>
+        :root {
+            --primary-color: #4a6baf;
+            --secondary-color: #f5f5f5;
+            --text-color: #333;
+            --white: #ffffff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .profile-container {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid var(--primary-color);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-size: 2rem;
+        }
+        
+        .job-title {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .qr-section {
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .qr-code {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            padding: 10px;
+            background: var(--white);
+        }
+        
+        .resume-section {
+            background: var(--white);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        
+        .resume-image {
+            width: 100%;
+            height: auto;
+            border: 1px solid #eee;
+            margin-bottom: 20px;
+        }
+        
+        .download-btn {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 12px 20px;
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 1rem;
+        }
+        
+        .download-btn:hover {
+            background-color: #3a5a9f;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .contact-info {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .contact-info p {
+            margin: 5px 0;
+        }
+        
+        .contact-info a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .job-title {
+                font-size: 1.1rem;
+            }
+            
+            .profile-container {
+                width: 120px;
+                height: 120px;
+            }
+            
+            .qr-code {
+                width: 120px;
+                height: 120px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            .job-title {
+                font-size: 1rem;
+            }
+            
+            .profile-container {
+                width: 100px;
+                height: 100px;
+            }
+            
+            .resume-section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile-container">
+                <img src="assets/images/profile.png" alt="Behzod's Profile Picture" class="profile-img">
+            </div>
+            <h1>Behzod</h1>
+            <p class="job-title">IT Helpdesk Specialist</p>
+        </header>
+        
+        <div class="contact-info">
+            <p><strong>Phone:</strong> +998 90 636 27 04</p>
+            <p><strong>Email:</strong> <a href="mailto:behzodmx27@gmail.com">behzodmx27@gmail.com</a></p>
+            <p><strong>Location:</strong> Yakkasaroy, Tashkent</p>
+        </div>
+        
+        <div class="qr-section">
+            <h2>My Portfolio</h2>
+            <div class="qr-code">
+                <img src="assets/images/portfolioQrCode.png" alt="Portfolio QR Code" style="width:100%; height:100%;">
+            </div>
+        </div>
+        
+        <div class="resume-section">
+            <h2 style="text-align: center; margin-bottom: 20px; color: var(--primary-color);">My Resume</h2>
+            <a href="assets/Downloads/" download="Resume.pdf" class="download-btn">Download Resume PDF</a>
+        </div>
+    </div>
+</body>
+</html>
